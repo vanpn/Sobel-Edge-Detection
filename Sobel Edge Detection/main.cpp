@@ -20,9 +20,10 @@ int main()
 
 	// display results
 	CImg<unsigned char> imageEdge(edge, numOfCols, numOfRows);
+	imageEdge.save("edge.bmp");
 	CImgDisplay src_disp(image, "source");
 	CImgDisplay edge_disp(imageEdge, "edge");
-	while (!src_disp.is_closed() || !edge_disp.is_closed())
+	while (!src_disp.is_closed())
 	{
 		src_disp.wait();
 	}
