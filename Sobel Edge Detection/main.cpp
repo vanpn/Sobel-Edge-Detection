@@ -28,7 +28,7 @@ int main()
 		src_disp.wait();
 	}
 
-	delete edge;
+	delete []edge;
 	
 	return 0;	
 }

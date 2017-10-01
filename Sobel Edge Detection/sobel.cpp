@@ -64,8 +64,8 @@ void SobelEdge(const unsigned char *image, int *G, const int numOfRows, const in
 		}
 	}
 		
-	delete Gx;
-	delete Gy;
-	delete g_1;
-	delete g_2;
+	delete []Gx;
+	delete []Gy;
+	delete []g_1;
+	delete []g_2;
 }
